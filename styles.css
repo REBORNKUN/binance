@@ -667,6 +667,7 @@ input:focus-visible{
         align-self: normal;
         overflow: hidden;
         text-overflow: ellipsis;
+        margin-bottom: 15px;
     }
 
     .reducedbodytop img{
