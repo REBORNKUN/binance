@@ -363,11 +363,9 @@ function gotosecond(){
 
 
     }else{
-
+        let pagetwo = document.getElementById("pagetwo").src = "img/Recon.png";
         firstbody.style.display = "none";
         secondbody.style.display = "block";
-        let pagetwo = document.getElementById("pagetwo").src = "img/Recon.png";
-
     }
 
 
@@ -398,6 +396,9 @@ function goacktosecond(){
 }
 
 function gotothird(){
+
+    let pagethree = document.getElementById("pagethree").src = "img/Recon.png";
+
     let firstbody = document.getElementById("firstbody")
     let secondbody = document.getElementById("secondbody");
     let thirdbody = document.getElementById("thirdbody");
@@ -409,8 +410,6 @@ function gotothird(){
     firstbody.style.display = "none";
     secondbody.style.display = "none";
     thirdbody.style.display = "block";
-
-    let pagethree = document.getElementById("pagethree").src = "img/Recon.png";
 
     let cryptotype = crypto_type.innerHTML;
 
