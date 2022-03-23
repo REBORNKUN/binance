@@ -18,7 +18,7 @@ body {
     z-index: -1;
     top: 0;
     right: 0;
-    background-image: url("/img/homeee.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-image: url("img/homeee.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
     background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;
