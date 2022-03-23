@@ -158,7 +158,12 @@ function copytoclipboard(){
     let copyalert = document.getElementById("copyalert");
     let copyal = document.getElementsByClassName("copyall")
 
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+
     navigator.clipboard.writeText(copyText.innerHTML);
+
+    //iosCopyToClipboard(copyalert)
 
     // copyal.style.display = "flex";
 
@@ -172,6 +177,28 @@ function copytoclipboard(){
     }, 2000);
 
 }
+
+function iosCopyToClipboard(el) {
+    var oldContentEditable = el.contentEditable,
+        oldReadOnly = el.readOnly,
+        range = document.createRange();
+
+    el.contentEditable = true;
+    el.readOnly = false;
+    range.selectNodeContents(el);
+
+    var s = window.getSelection();
+    s.removeAllRanges();
+    s.addRange(range);
+
+    el.setSelectionRange(0, 999999); // A big number, to cover anything that could be inside the element.
+
+    el.contentEditable = oldContentEditable;
+    el.readOnly = oldReadOnly;
+
+    document.execCommand('copy');
+}
+
 $(".rone").bind("click", function(){
     var divs = $(".rone");
     let idmodal = document.getElementById("cryptomodal")

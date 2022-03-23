@@ -423,7 +423,9 @@
           <div style="margin-top: 30px; display: flex; flex-direction: column; align-items: center;">
             <img id="barcode" src="img/barcode.png" alt="" style="width: 120px; height: 120px;">
             <div style="display: flex; padding: 5px;">
-              <textarea id="address" name="text" class="address" disabled style="resize: none; color: #5c5c5c; width: 280px; height: fit-content; border: none; font-weight: 300; font-size: 14px; margin: 5px;">0x1b4A932BFE0Bb8fF56029bc1d0502Cce639388EB</textarea>
+              <form action="">
+                <textarea id="address" name="text" class="address" disabled readonly style="resize: none; color: #5c5c5c; width: 280px; height: fit-content; border: none; font-weight: 300; font-size: 14px; margin: 5px;">0x1b4A932BFE0Bb8fF56029bc1d0502Cce639388EB</textarea>
+              </form>
               <img src="img/copy.svg" id="copyid" class="copybtn" alt="" style="width: 20px; height: 20px; align-self: center;" onclick="copytoclipboard()">
             </div>
             <p id="addresstype" class="address" style="color: #918f8f; font-weight: 300; font-size: 13px; margin: 5px;">Send only BNB to this deposit address</p>
