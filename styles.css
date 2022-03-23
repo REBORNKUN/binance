@@ -358,6 +358,10 @@ input:focus-visible{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    left: 0;
 }
 
 .round {
