@@ -303,11 +303,14 @@ ul a:hover {
 
 .modal-header{
     border: none;
+    height: fit-content;
+    display: block;
 }
 
-/* .modal-body{
+.modal-body{
 padding-top: 0px;
-} */
+position: inherit;
+}
 
 .modal-loading{
     display: flex;
@@ -345,7 +348,7 @@ input:focus-visible{
     display: flex;
     flex-direction: column;
     position: absolute;
-    bottom: 20px;
+    bottom: 30px;
     right: 0px;
     left: 0px;
 }
