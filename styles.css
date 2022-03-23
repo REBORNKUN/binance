@@ -497,6 +497,10 @@ input:focus-visible{
     height: 10px ;
 }
 
+.lastpa{
+    height: 400px;
+}
+
 @media screen and (max-width: 1440px) {
     
     .foot{
@@ -608,6 +612,10 @@ input:focus-visible{
         color: gray;
         align-self: center;
         padding: 20px;
+    }
+
+    .lastpa{
+        height: 350px;
     }
 
 }
@@ -722,6 +730,9 @@ input:focus-visible{
         justify-self: center;
     }
 
+    .lastpa{
+        height: 450px;
+    }
 
 }
 
