@@ -293,7 +293,6 @@ ul a:hover {
 .modal-dialog{
     display: flex;
     justify-content: center;
-    position: absolute;
 }
 
 .modal-content{
@@ -719,6 +718,11 @@ input:focus-visible{
 
     .modal-dialog{
         height: 100%;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        position:absolute;
     }
 
     .bbbbb{
@@ -726,9 +730,7 @@ input:focus-visible{
     }
 
     .modal-content {
-        height: 100%;
-        width: 100%;
-        justify-self: center;
+        align-self: center;
     }
 
     .lastpa{
