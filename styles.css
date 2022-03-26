@@ -293,6 +293,7 @@ ul a:hover {
 .modal-dialog{
     display: flex;
     justify-content: center;
+    position: absolute;
 }
 
 .modal-content{
